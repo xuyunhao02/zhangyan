@@ -13,16 +13,10 @@
  */
 package com.easemob.applib.controller;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
-import android.R.bool;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.easemob.EMCallBack;
 import com.easemob.EMConnectionListener;
@@ -40,6 +34,10 @@ import com.easemob.chat.EMContactManager;
 import com.easemob.chat.EMGroupManager;
 import com.easemob.exceptions.EaseMobException;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 /**
  * The developer can derive from this class to talk with HuanXin SDK
  * All the Huan Xin related initialization and global listener are implemented in this class which will 
@@ -56,7 +54,7 @@ import com.easemob.exceptions.EaseMobException;
 public abstract class HXSDKHelper {
 
 	/**
-	 * 群组更新完成
+	 * 群组更新完成 ...
 	 */
 	static public interface HXSyncListener {
 		public void onSyncSucess(boolean success);
