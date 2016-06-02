@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="#000"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/common_tab_bg"
+            android:onClick="back" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="9dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/mm_title_back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="新建群聊"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit_group_location"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_normal_shape"
+        android:hint="位置"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:textSize="18sp" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认"
+            android:textColor="3000"/>
+        <RadioButton
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手动输入"
+            android:textColor="3000"/>
+    </RadioGroup>
+    <EditText
+        android:id="@+id/edit_group_aihao"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_normal_shape"
+        android:hint="兴趣"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:textSize="18sp" />
+
+
+   <LinearLayout
+       android:layout_marginTop="20dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <CheckBox
+               android:layout_marginLeft="50dp"
+               android:id="@+id/cb_public1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="0"
+               android:layout_gravity="center_vertical"
+               android:button="@drawable/checkbox_bg_selector"
+               />
+           <TextView
+               android:layout_marginTop="5dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="书画"
+               android:textSize="20sp"
+               android:textColor="#ccc"/>
+           <CheckBox
+               android:id="@+id/cb_taoci"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="0"
+               android:layout_gravity="center_vertical"
+               android:button="@drawable/checkbox_bg_selector"
+               />
+           <TextView
+               android:layout_marginTop="5dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="陶瓷"
+               android:textSize="20sp"
+               android:textColor="#ccc"/>
+           <CheckBox
+               android:id="@+id/cb_yuqi"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="0"
+               android:layout_gravity="center_vertical"
+               android:button="@drawable/checkbox_bg_selector"
+               />
+           <TextView
+               android:layout_marginTop="5dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="玉器"
+               android:textSize="20sp"
+               android:textColor="#ccc"/>
+           <CheckBox
+               android:id="@+id/cb_zhumu"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="0"
+               android:layout_gravity="center_vertical"
+               android:button="@drawable/checkbox_bg_selector" />
+           <TextView
+               android:layout_marginTop="5dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="竹木"
+               android:textSize="20sp"
+               android:textColor="#ccc"/>
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <CheckBox
+               android:layout_marginLeft="50dp"
+               android:id="@+id/cb_qianzheng"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="0"
+               android:layout_gravity="center_vertical"
+               android:button="@drawable/checkbox_bg_selector"
+               />
+           <TextView
+               android:layout_marginTop="5dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="钱证"
+               android:textSize="20sp"
+               android:textColor="#ccc"/>
+           <CheckBox
+               android:id="@+id/cb_zhubao"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="0"
+               android:layout_gravity="center_vertical"
+               android:button="@drawable/checkbox_bg_selector"
+               />
+           <TextView
+               android:layout_marginTop="5dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="珠宝"
+               android:textSize="20sp"
+               android:textColor="#ccc"/>
+           <CheckBox
+               android:id="@+id/cb_zazhen"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="0"
+               android:layout_gravity="center_vertical"
+               android:button="@drawable/checkbox_bg_selector"
+               />
+           <TextView
+               android:layout_marginTop="5dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="杂珍"
+               android:textSize="20sp"
+               android:textColor="#ccc"/>
+           <CheckBox
+               android:id="@+id/cb_jinshi"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="0"
+               android:layout_gravity="center_vertical"
+               android:button="@drawable/checkbox_bg_selector"
+               />
+           <TextView
+               android:layout_marginTop="5dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="金石"
+               android:textSize="20sp"
+               android:textColor="#ccc"/>
+
+       </LinearLayout>
+       <Button
+
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="15dp"
+           android:layout_width="350dp"
+           android:layout_height="60dp"
+           android:background="#ff431e"
+           android:text="下一步"
+           android:textColor="#fff"
+           android:textSize="25sp" />
+   </LinearLayout>
+
+
+
+
+</LinearLayout>
